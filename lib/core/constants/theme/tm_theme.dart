@@ -12,9 +12,9 @@ class TMTheme {
       onPrimary: Color(0xFF3A48F8),
       onSecondary: Color(0xFF9C2CF3),
       onError: Colors.white,
-      onBackground: Colors.black,
+      onBackground: Color(0xFF2E3A59),
       surface: Color(0xFFD8DEF3),
-      onSurface: Color(0xFF2E3A59)
+      onSurface: Color(0xFF2E3A59),
     )
   );
 }
