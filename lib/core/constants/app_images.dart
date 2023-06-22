@@ -4,4 +4,7 @@ class TMImages {
   static const notification = "assets/images/svg/notification.svg";
   static const search = "assets/images/svg/search.svg";
   static const calendar = "assets/images/svg/calendar.svg";
+
+  ///Project icon(s)
+  static const projectIcon = "assets/images/svg/projectIcon.svg";
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:task_manager/core/constants/app_images.dart';
+import 'package:task_manager/core/helpers/presentation_helpers.dart';
 
 class ProjectCard extends StatefulWidget {
   const ProjectCard({super.key});
@@ -121,23 +123,34 @@ class _ProjectCardState extends State<ProjectCard> {
                 ],
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.fromLTRB(15, 30, 15, 30),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 30, 15, 30),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Project 1',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w600,
-                    ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 35,
+                        height: 35,
+                        child: PresentationHelper().buildSVGAsset(asset: TMImages.projectIcon),
+                      ),
+                      const SizedBox(width: 15),
+                      const Text(
+                        'Project 1',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
                   ),
-                  Text(
+                  const Text(
                     'Front-End Development',
                     style: TextStyle(
                       color: Colors.white,
@@ -146,7 +159,7 @@ class _ProjectCardState extends State<ProjectCard> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Text(
+                  const Text(
                     'October 20, 2020',
                     style: TextStyle(
                       color: Colors.white,
@@ -156,14 +169,6 @@ class _ProjectCardState extends State<ProjectCard> {
                     ),
                   ),
                 ],
-              ),
-            ),
-            const Positioned(
-              left: 37,
-              top: 37,
-              child: SizedBox(
-                width: 50.96,
-                height: 50.96,
               ),
             ),
           ],
